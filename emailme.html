@@ -1,79 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Email form</title>
-        <meta charset="UTF-8">
+  <head>
+    <title>Email form</title>
+    <meta charset="UTF-8" />
 
-        <!-- for responsive web design -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- font awesome access link -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- font awesome access link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-        <!-- Nunito font access link-->
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <!-- Nunito font access link-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+    />
 
-        <!-- styles.css link -->
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-    </head>
+    <!-- styles.css link -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-    <body>
-        <header>
-            <nav>
-                <ul class="navbar">
-                    <li style="list-style: none;"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/717a7e109106669.5fcc9b2ac3072.jpg" id="image" alt="ger-image"></li>
-                    <li class="nav-list"><a href="index.html">Home</a></li>
-                    <li class="nav-list"><a href="discovermongolia.html" target="_blank">About Mongolia</a></li>
-                    <li class="nav-list"><a href="emailme.html" target="_blank">Email me</a></li>
-                </ul>
-            </nav>
-        </header>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li style="list-style: none">
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/projects/404/717a7e109106669.5fcc9b2ac3072.jpg"
+              id="image"
+              alt="ger-image"
+            />
+          </li>
+          <li class="nav-list"><a href="index.html">Home</a></li>
+          <li class="nav-list">
+            <a href="discovermongolia.html" target="_blank">About Mongolia</a>
+          </li>
+          <li class="nav-list">
+            <a href="emailme.html" target="_blank">Email me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <main class="section">
-            <section id="emailleft">
-                <h2>Send me an email!</h2>
-                
-                <!-- used div just to tick it off the requirements from the brief -->
-                <!-- div below is to ensure all input in form will have width of 100% using css-->
-                <div class="container">
-                    <form action="mailto:maryanneg@missionreadyhq.com" method="post" autocomplete="on">
+    <main>
+      <section id="emailleft">
+        <h2 style="margin-bottom: -0.1em">Send me an email!</h2>
 
-                        <label for="fname">First Name: </label>
-                        <input type="text" id="fname" name="fname" required placeholder="Please enter your first name here">
-                        <br>
-                        <label for="lname">Last Name: </label>
-                        <input type="text" id="lname" name="lname" required placeholder="Please enter your last name here">
-                        <br>
-                        <label for="email">Email address: </label>
-                        <input type="email" id="email" name="email" required placeholder="Please enter your email here">
-                        <br>
-                        <br>
-                        <label for="message">Write me a message here: </label>
-                        <br>
-                        <textarea id="message" name="message" cols="70" rows="10"></textarea>
-                        <br>
-                        <input class="btn" type="submit" value="Send!">
-            
-                    </form>
-                </div>
-            </section>
+        <!-- used div just to tick it off the requirements from the brief -->
+        <!-- div below is to ensure all input in form will have width of 100% using css-->
+        <div class="container">
+          <form
+            action="mailto:maryanneg@missionreadyhq.com"
+            method="post"
+            autocomplete="on"
+          >
+            <label for="fname">First Name: </label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              required
+              placeholder="Please enter your first name here"
+            />
+            <br />
+            <label for="lname">Last Name: </label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              required
+              placeholder="Please enter your last name here"
+            />
+            <br />
+            <label for="email">Email address: </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Please enter your email here"
+            />
+            <br />
+            <br />
+            <label for="message">Write me a message here: <br /></label>
+            <br />
+            <textarea id="message" name="message" cols="70" rows="8"></textarea>
+            <br />
+            <input class="btn" type="submit" value="Send!" />
+          </form>
+        </div>
+      </section>
 
-            <hr>
+      <hr class="responsive-hr" />
 
-            <section id="emailright">
-                <h2>Message me on facebook or instagram instead!</h2>
-                <br>
-                <!-- Link to facebook and instagram pages -->
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fa-brands fa-square-instagram fa-2xl"></i>
-                </a>
+      <section id="emailright">
+        <h2>Message me on facebook or instagram instead!</h2>
+        <br />
+        <!-- Link to facebook and instagram pages -->
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-square-instagram fa-2xl"></i>
+        </a>
 
-                <a href="https://facebook.com/" target="_blank">
-                    <i class="fa-brands fa-facebook fa-2xl"></i>
-                </a> 
-            </section>
-        </main>
-
-        
-    </body>
+        <a href="https://facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+        </a>
+      </section>
+    </main>
+  </body>
 </html>

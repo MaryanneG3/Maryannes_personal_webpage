@@ -1,187 +1,213 @@
+/* Media query for medium-sized devices - 768px */
+@media screen and (max-width: 768px) {
+  .navbar,
+  main {
+    flex-direction: column;
+  }
+
+  .responsive-hr {
+    opacity: 0%;
+  }
+}
+
+/* Media query for nav bar image */
+@media (max-width: 768px) {
+  nav img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav img {
+    width: 80px;
+  }
+}
+
 /* index page styling */
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 p {
-    margin: 35px 0px;
+  margin: 35px 0px;
 }
 
 body {
-    font-family: Nunito;
-    background-color: #ffffff;
-    color: #130456;
+  font-family: Nunito;
+  background-color: #ffffff;
+  color: #130456;
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
 #left {
-    width: 45%;
-    margin: 6em;
+  width: 45%;
+  margin: 6em;
 }
 
 #right {
-    width: 55%;
-    margin: 6em;
-    text-align: left;
+  width: 55%;
+  margin: 6em;
+  text-align: left;
 }
 
-nav{
-    background-color: #b6adf7;
-}
-
-/* media query so that when screen size is less than 600px the navbar and main content flex-direction is column */
-@media screen and (max-width:600px){
-    .navbar,.section{
-        flex-direction: column;
-    }
+nav {
+  background-color: #b6adf7;
 }
 
 /* float to keep image to the left of nav */
-#image{
-    width: 40%;
-    height: 100%;
-    float: left;
-    position: relative;
+nav img {
+  max-width: 100%;
+  width: 180px;
+  height: auto;
 }
 
-nav>ul {
-    display: flex;
-    justify-content: start;
-    gap: 40px;
-    margin: 20px 10px;
+nav > ul {
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+  margin: 20px 10px;
 }
 
 .nav-list {
-    list-style: none;
-    margin: 2px 5px;
-    padding: 50px;
-    padding-left: 1px;
-    text-align: center;
+  list-style: none;
+  margin: 2px 5px;
+  padding: 50px;
+  padding-left: 1px;
+  text-align: center;
 
-    font-size: 20px;
+  font-size: 20px;
 }
 
-.nav-list:hover{
-    font-weight: bolder;
+.nav-list:hover {
+  font-weight: bolder;
 }
 
 .btn {
-    background-color:  #ccc5ff;
+  background-color: #ccc5ff;
 }
 
 .btn:hover {
-    font-weight: 700;
-    background-color: #addbf7;
-    color: black;
+  font-weight: 700;
+  background-color: #addbf7;
+  color: black;
 }
 
 .discover-btn {
-    border:none;
-    border-radius: 12px;
-    width: 200px;
-    padding:14px 25px;
-    margin: 20px 0px;
+  border: none;
+  border-radius: 12px;
+  width: 200px;
+  padding: 14px 25px;
+  margin: 20px 0px;
 
-    font-family: Nunito;
-    font-size: 15px;
-    font-weight: 500;
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 a {
-    text-decoration: none;
-    color: #130456;
+  text-decoration: none;
+  color: #130456;
 }
 
 /* Animation for wlecome message */
 
-@keyframes changefontcolor{
-    0%{color: rgb(149, 149, 248);}
-    25%{color:  pink;}
-    50%{color: #51b7f6;}
-    75%{color:  pink;}
-    100%{color: rgb(149, 149, 248);}
+@keyframes changefontcolor {
+  0% {
+    color: rgb(149, 149, 248);
+  }
+  25% {
+    color: pink;
+  }
+  50% {
+    color: #51b7f6;
+  }
+  75% {
+    color: pink;
+  }
+  100% {
+    color: rgb(149, 149, 248);
+  }
 }
 
-.animate{
-    animation-name: changefontcolor;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-
+.animate {
+  animation-name: changefontcolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 /* email form styling */
-.container{
-    width: 500px;
+.container {
+  /* display: flex;
+  flex-direction: column; */
+  padding: 30px;
 }
 
-.container input{
-    width: 100%;
+.container input {
+  width: 100%;
 }
 
 #emailleft {
-    width: 45%;
-    margin: 1.8em;
+  /* width: 45%; */
+  margin: 1.8em;
 }
 
 #emailright {
-    width: 45%;
-    margin: 4em;
-    text-align: center;
+  width: 45%;
+  margin: 4em;
+  text-align: center;
 }
 
-input{
-    width: 50%;
+label {
+  font-weight: bold;
 }
-
-label{
-    font-weight: bold;
-}
-
 
 /* taken from our day 05 class on forms with some adjustments made to it*/
-[type=text], [type=email]{
-    padding: .8em;
-    margin: 8px 0;
-    border: none;
-    border-bottom: 1px solid rgb(149, 149, 248);
-    line-height: 1.5em;
+[type="text"],
+[type="email"] {
+  padding-bottom: 0.8em;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid rgb(149, 149, 248);
+  line-height: 1.5em;
 }
 
-textarea{
-    border: 1px solid rgb(149, 149, 248);
+textarea {
+  border: 1px solid rgb(149, 149, 248);
+  width: 100%;
+  max-width: 100%;
 }
 
-[type=submit]{
-    background-color:#b6adf7;
-    border: none;
-    border-radius: 12px;
-    margin-top: 1em;
-    padding: 1em;
-    width: 25%;
-    height: 35%;
+[type="submit"] {
+  background-color: #b6adf7;
+  border: none;
+  border-radius: 12px;
+  margin-top: 1em;
+  padding: 1em;
+  width: 25%;
+  height: 35%;
 }
 
 /* flex box styling for discover mongolia page */
 /* bits of code from day 04 class */
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .flex-item {
-    width: 30%; 
-    margin-bottom: 10px;
-    box-sizing: border-box;
+  width: 30%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 
 .flex-item img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }

@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Maryanne's Personal Webpage</title>
+    <meta charset="UTF-8" />
 
-    <head>
-        <title>Maryanne's Personal Webpage</title>
-        <meta charset="UTF-8">
+    <!-- for responsive web design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- for responsive web design -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome access link -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
 
-        <!-- font awesome access link -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Nunito font access link-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+    />
 
-        <!-- Nunito font access link-->
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <!-- styles.css link -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-        <!-- styles.css link -->
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li style="list-style: none">
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/projects/404/717a7e109106669.5fcc9b2ac3072.jpg"
+              id="image"
+              alt="ger-image"
+            />
+          </li>
+          <li class="nav-list"><a href="index.html">Home</a></li>
+          <li class="nav-list">
+            <a href="discovermongolia.html" target="_blank">About Mongolia</a>
+          </li>
+          <li class="nav-list">
+            <a href="emailme.html" target="_blank">Email me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    </head>
+    <main>
+      <section id="left">
+        <h1 class="animate">Welcome to my webpage!</h1>
+      </section>
 
-    <body>
-        <header>
-            <nav>
-                <ul class="navbar">
-                    <li style="list-style: none;"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/717a7e109106669.5fcc9b2ac3072.jpg" id="image" alt="ger-image"></li>
-                    <li class="nav-list"><a href="index.html">Home</a></li>
-                    <li class="nav-list"><a href="discovermongolia.html" target="_blank">About Mongolia</a></li>
-                    <li class="nav-list"><a href="emailme.html" target="_blank">Email me</a></li>
-                </ul>
-            </nav>
-        </header>
+      <hr class="responsive-hr" />
 
-        <main class="section">
+      <section id="right">
+        <h2><span style="font-size: 20px">Hi there!</span></h2>
 
-            <section id="left">
-                <h1 class="animate">Welcome to my webpage!</h1>
-            </section>
+        <p>
+          My name's Maryanne. Samoan born and raised. <br />
+          I've lived in Samoa for 15 years and spent 7 <br />
+          unforgettable years of my life in Mongolia.
+          <br />
+          <br />
+          Click below to see some of my favorite things about Mongolia.
+        </p>
 
-            <hr>
+        <button class="btn discover-btn">
+          <a href="discovermongolia.html" target="_blank">Click me!</a>
+        </button>
+        <br />
 
-            <section id="right">
+        <!-- Link to facebook and instagram pages -->
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-square-instagram fa-2xl"></i>
+        </a>
 
-                <h2><span style="font-size: 20px;">Hi there!</span></h2>
-
-                <p>
-                    My name's Maryanne. Samoan born and raised. <br>
-                    I've lived in Samoa for 15 years and spent 7 <br>
-                    unforgettable years of my life in Mongolia. 
-                    <br>
-                    <br>
-                    Click below to see some of my favorite things about Mongolia.
-                </p>
-
-                <button class="btn discover-btn"><a href="discovermongolia.html" target="_blank">Click me!</a></button>
-                <br>
-
-                <!-- Link to facebook and instagram pages -->
-                <a href="https://www.instagram.com/" target="_blank">
-                    <i class="fa-brands fa-square-instagram fa-2xl"></i>
-                </a>
-
-                <a href="https://facebook.com/" target="_blank">
-                    <i class="fa-brands fa-facebook fa-2xl"></i>
-                </a>            
-            </section>
-
-        </main>
-
-    </body>
-
+        <a href="https://facebook.com/" target="_blank">
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+        </a>
+      </section>
+    </main>
+  </body>
 </html>
