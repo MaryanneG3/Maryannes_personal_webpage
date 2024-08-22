@@ -1,9 +1,15 @@
 /* Media query for medium-sized devices - 768px */
 @media screen and (max-width: 768px) {
   .navbar,
+  nav,
   main {
     flex-direction: column;
   }
+
+  /* nav img {
+    position: relative;
+    float: center;
+  } */
 
   .responsive-hr {
     opacity: 0%;
@@ -48,7 +54,7 @@ nav img {
 
 nav > ul {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 
   list-style: none;
   align-items: center;
@@ -78,6 +84,7 @@ main {
 #left {
   width: 45%;
   margin: 6em;
+  text-align: center;
 }
 
 #right {
@@ -199,7 +206,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 2em;
+  padding: 2em 1em 0 1em;
 }
 
 .flex-item {
