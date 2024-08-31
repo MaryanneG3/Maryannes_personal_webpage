@@ -23,25 +23,30 @@
 
     <!-- styles.css link -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <header>
-      <nav>
-        <ul class="navbar">
-          <li style="list-style: none">
-            <img
-              src="https://mir-s3-cdn-cf.behance.net/projects/404/717a7e109106669.5fcc9b2ac3072.jpg"
-              id="image"
-              alt="ger-image"
-            />
-          </li>
+      <nav id="navbar">
+        <div class="navbar-left">
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/projects/404/717a7e109106669.5fcc9b2ac3072.jpg"
+            id="dark-mode-switch"
+            alt="ger-image"
+          />
+        </div>
+        <ul class="navbar-right">
           <li class="nav-list"><a href="index.html">Home</a></li>
           <li class="nav-list">
             <a href="discovermongolia.html" target="_blank">About Mongolia</a>
           </li>
           <li class="nav-list">
             <a href="emailme.html" target="_blank">Email me</a>
+          </li>
+          <li>
+            <button id="minimize-nav"><i class="fa-solid fa-bars"></i></button>
           </li>
         </ul>
       </nav>
@@ -91,7 +96,7 @@
             <br />
             <textarea id="message" name="message" cols="70" rows="8"></textarea>
             <br />
-            <input class="btn" type="submit" value="Send!" />
+            <input class="btn" type="submit" value="Send message!" />
           </form>
         </div>
       </section>

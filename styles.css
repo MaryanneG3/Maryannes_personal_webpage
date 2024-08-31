@@ -1,28 +1,20 @@
 /* Media query for medium-sized devices - 768px */
 @media screen and (max-width: 768px) {
-  .navbar,
-  nav,
   main {
     flex-direction: column;
+    align-items: center;
   }
-
-  /* nav img {
-    position: relative;
-    float: center;
-  } */
 
   .responsive-hr {
     opacity: 0%;
   }
 }
 
-/* index page styling */
+/* -------------------------------------------------------------------------- */
+
+/* main styling */
 h1 {
   font-size: 40px;
-}
-
-p {
-  margin-top: 35px;
 }
 
 body {
@@ -30,68 +22,80 @@ body {
   background-color: #ffffff;
   color: #130456;
 }
+a {
+  color: #130456;
+}
+
+/* -------------------------------------------------------------------------- */
 
 /* Nav styling */
 nav {
+  display: flex;
+  justify-content: space-between;
   background-color: #b6adf7;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 12px;
-  margin: 1em 1em;
+  font-size: 18px;
 }
 
-nav img {
-  max-width: 100%;
-  max-height: 100%;
-
-  border-radius: 15px;
-  float: left;
-  width: 30%;
-  height: auto;
-  /* margin-right: auto; */
-}
-
-nav > ul {
+.navbar-left {
   display: flex;
-  justify-content: flex-end;
+  justify-content: start;
+  align-items: center;
+}
 
+.navbar-right {
+  display: flex;
+  justify-content: end;
   list-style: none;
   align-items: center;
-  gap: 100px;
-  margin: 0;
-
+  gap: 80px;
   text-align: center;
+  margin: 0;
   padding: 0;
 }
 
-.nav-list {
-  font-size: 20px;
-  margin: 20px 10px;
+nav img {
+  border-radius: 10px;
+  width: 30%;
+  height: auto;
 }
 
 .nav-list:hover {
   font-weight: bolder;
 }
 
+#minimize-nav {
+  padding: 1.2em;
+  border-radius: 10px;
+  border: none;
+  background-color: #dedaff;
+}
+
+/* -------------------------------------------------------------------------- */
+
 /* main section styling */
 
 main {
-  padding-top: 2em;
+  padding-top: 3em;
   display: flex;
 }
 
 #left {
   width: 45%;
-  margin: 6em;
+  margin: 10em;
   text-align: center;
+  align-items: center;
 }
 
 #right {
   width: 55%;
-  margin: 6em;
+  margin: 10em;
   text-align: left;
+  align-items: center;
 }
+
+/* -------------------------------------------------------------------------- */
 
 /* Button styling */
 
@@ -110,7 +114,7 @@ main {
   border-radius: 12px;
   width: 200px;
   padding: 14px 25px;
-  margin: 20px 0px;
+  margin: 50px 0px 20px 0px;
 
   font-family: Nunito;
   font-size: 15px;
@@ -122,6 +126,8 @@ a {
   color: #130456;
 }
 
+/* -------------------------------------------------------------------------- */
+
 /* Animation for wlecome message */
 
 @keyframes changefontcolor {
@@ -132,7 +138,7 @@ a {
     color: pink;
   }
   50% {
-    color: #51b7f6;
+    color: #80ceff;
   }
   75% {
     color: pink;
@@ -148,15 +154,19 @@ a {
   animation-iteration-count: infinite;
 }
 
+/* -------------------------------------------------------------------------- */
+
 /* email form styling */
 .container {
-  /* display: flex;
-  flex-direction: column; */
   padding: 30px;
 }
 
 .container input {
   width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f0ecff;
+  color: #130456;
 }
 
 #emailleft {
@@ -188,6 +198,7 @@ textarea {
   border: 1px solid rgb(149, 149, 248);
   width: 100%;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 [type="submit"] {
@@ -200,8 +211,10 @@ textarea {
   height: 35%;
 }
 
+/* -------------------------------------------------------------------------- */
+
 /* flex box styling for discover mongolia page */
-/* bits of code from day 04 class */
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -211,7 +224,7 @@ textarea {
 
 .flex-item {
   width: 30%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   box-sizing: border-box;
 }
 
@@ -219,4 +232,31 @@ textarea {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* DARK MODE */
+
+.dark-mode {
+  background-color: #16112a;
+  color: #dedaff;
+}
+
+a.dark-mode {
+  color: #dedaff;
+}
+
+a.dark-mode:hover {
+  color: #ffdafc;
+}
+
+#btn.dark-mode {
+  color: #16112a;
+  background-color: #dedaff;
+}
+
+#btn.dark-mode:hover {
+  color: #16112a;
+  background-color: #f8daff;
 }
