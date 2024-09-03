@@ -23,8 +23,6 @@
 
     <!-- styles.css link -->
     <link rel="stylesheet" type="text/css" href="styles.css" />
-
-    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -54,7 +52,7 @@
 
     <main>
       <section id="emailleft">
-        <h2 style="margin-bottom: -0.1em">Send me an email!</h2>
+        <h2 style="margin-top: -1em">Send me an email!</h2>
 
         <!-- used div just to tick it off the requirements from the brief -->
         <!-- div below is to ensure all input in form will have width of 100% using css-->
@@ -72,7 +70,7 @@
               required
               placeholder="Please enter your first name here"
             />
-            <br />
+
             <label for="lname">Last Name: </label>
             <input
               type="text"
@@ -81,7 +79,7 @@
               required
               placeholder="Please enter your last name here"
             />
-            <br />
+
             <label for="email">Email address: </label>
             <input
               type="email"
@@ -90,13 +88,17 @@
               required
               placeholder="Please enter your email here"
             />
-            <br />
-            <br />
+
             <label for="message">Write me a message here: <br /></label>
             <br />
-            <textarea id="message" name="message" cols="70" rows="8"></textarea>
-            <br />
-            <input class="btn" type="submit" value="Send message!" />
+            <textarea id="message" name="message" cols="60" rows="8"></textarea>
+
+            <input
+              class="btn"
+              type="submit"
+              value="Send message!"
+              id="submitEmailBtn"
+            />
           </form>
         </div>
       </section>
@@ -116,5 +118,12 @@
         </a>
       </section>
     </main>
+    <footer class="footy">
+      <h2 style="font-size: 16px">
+        @2024 Maryanne's webpage.<br />All rights reserved and what not.
+      </h2>
+    </footer>
+
+    <script src="script.js" defer></script>
   </body>
 </html>
