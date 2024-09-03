@@ -77,20 +77,21 @@ nav img {
 /* main section styling */
 
 main {
-  padding-top: 3em;
+  margin: 5em 0;
   display: flex;
 }
 
 #left {
-  width: 45%;
-  margin: 10em;
+  width: 50%;
+  padding: 8em 3em 3em 3em;
+  margin: 2em;
   text-align: center;
   align-items: center;
 }
 
 #right {
-  width: 55%;
-  margin: 10em;
+  width: 50%;
+  margin: 5em;
   text-align: left;
   align-items: center;
 }
@@ -121,6 +122,11 @@ main {
   font-weight: 500;
 }
 
+#submitEmailBtn {
+  margin-top: 2em;
+  width: 50%;
+}
+
 a {
   text-decoration: none;
   color: #130456;
@@ -131,26 +137,20 @@ a {
 /* Animation for wlecome message */
 
 @keyframes changefontcolor {
-  0% {
-    color: rgb(149, 149, 248);
-  }
-  25% {
-    color: pink;
-  }
-  50% {
-    color: #80ceff;
-  }
-  75% {
-    color: pink;
-  }
+  0%,
+  50%,
   100% {
-    color: rgb(149, 149, 248);
+    color: rgb(138, 50, 201);
+  }
+  25%,
+  75% {
+    color: rgb(108, 144, 246);
   }
 }
 
 .animate {
   animation-name: changefontcolor;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
@@ -170,12 +170,12 @@ a {
 }
 
 #emailleft {
-  /* width: 45%; */
+  width: 50%;
   margin: 0 1.8em 1.8em 1.8em;
 }
 
 #emailright {
-  width: 45%;
+  width: 50%;
   margin: 4em;
   text-align: center;
 }
@@ -199,6 +199,8 @@ textarea {
   width: 100%;
   max-width: 100%;
   border-radius: 10px;
+  padding: 2em 0.2em 2em 2em;
+  margin-right: 0.5em;
 }
 
 [type="submit"] {
@@ -215,7 +217,7 @@ textarea {
 
 /* flex box styling for discover mongolia page */
 
-.flex-container {
+/* .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -232,7 +234,7 @@ textarea {
   width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 /* ------------------------------------------------------------------------------- */
 
@@ -249,14 +251,118 @@ a.dark-mode {
 
 a.dark-mode:hover {
   color: #ffdafc;
+  font-size: 19px;
 }
 
-#btn.dark-mode {
+#btn.dark-mode,
+#submitEmailBtn.dark-mode {
   color: #16112a;
-  background-color: #dedaff;
+  background-color: #d3d0ec;
 }
 
 #btn.dark-mode:hover {
   color: #16112a;
-  background-color: #f8daff;
+  background-color: #ebdaff;
+  font-size: large;
+}
+
+input.dark-mode {
+  background-color: #16112a;
+  color: #dae6ff;
+  border-bottom: 1px solid rgb(142, 97, 220);
+}
+
+/* footer */
+
+.footy {
+  text-align: center;
+  bottom: 0;
+}
+
+.backgroundImage {
+  background-image: url("https://img.freepik.com/free-photo/aesthetic-purple-smoke-banner-background_53876-129044.jpg");
+  /* background-image: url("https://wallpapercrafter.com/th800/97263-artwork-purple-background-minimalism-ship.jpg"); */
+  background-size: cover;
+  border-radius: 10px;
+  width: 45px;
+}
+
+hr {
+  border-color: #abadff;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* IMAGE CAROUSEL - ABOUT MONGOLIA PAGE STYLING */
+
+#discover-main {
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+
+  width: 600px;
+  height: 400px;
+  padding: 5em 0;
+  padding-bottom: 10em;
+}
+
+.imageSlides {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#slide-image {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* make image cover container */
+}
+
+/* arrows */
+.previousSlide,
+.nextSlide {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  padding: 15px 20px;
+  border: none;
+
+  color: rgb(250, 230, 254);
+  background-color: #9081c7;
+  opacity: 80%;
+}
+
+#prev {
+  left: 25%;
+  border-radius: 6px 0 0 6px;
+}
+
+#next {
+  right: 25%;
+  border-radius: 0 6px 6px 0;
+}
+.info {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%); /* to center */
+  text-align: center;
+
+  background-color: rgb(196, 185, 237);
+  color: white;
+  /* opacity: 70%; */
+
+  padding: 1em;
+  margin-bottom: 1em;
+  /* border-radius: 5px; */
 }
